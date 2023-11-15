@@ -5,6 +5,6 @@ resource "newrelic_notification_channel" "team_email_channel" {
   product = "IINT"
 property {
     key = "customDetailsEmail"
-    value = "[HOST-${data.newrelic_entity.infra_monitor.name}]-issue id - {{issueId}}"
+    value = "[HOST-${data.newrelic_entity.infra_monitor.name}]-issue Title - {{issueTitle}}"
   }
 }
