@@ -3,8 +3,8 @@ resource "newrelic_nrql_alert_condition" "high_cpu_usage" {
 
   name        = "High CPU Usage "
   description = "Warning if cpu usage goes above 80% and critical alert if goes above 90%"
-violation_time_limit_seconds   = 3600
-expiration_duration            = 120
+  violation_time_limit_seconds   = 3600
+  expiration_duration            = 120
   open_violation_on_expiration   = true
   close_violations_on_expiration = true
 

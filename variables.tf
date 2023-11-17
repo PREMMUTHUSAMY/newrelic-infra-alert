@@ -9,7 +9,7 @@ variable "account_id" {
 }
 
 variable "region" {
-  default     = # Your region either U.S or EU
+  default     = # Your region either US or EU
 }
 variable "entity_name" {
   default = # Must be an exact match to your application name in New Relic
@@ -32,4 +32,9 @@ variable "emails" {
 
 default =  # Place your emails separated by commas.
   
+}
+
+variable "notify_triggers" {
+default =  ["ACTIVATED","ACKNOWLEDGED","PRIORITY_CHANGED","CLOSED"]
+
 }
