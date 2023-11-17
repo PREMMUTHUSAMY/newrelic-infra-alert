@@ -5,6 +5,6 @@ resource "newrelic_notification_channel" "team_email_channel" {
   product = "IINT"
 property {
     key = "subject"
-    value = "[Issue Status: {{state}}] [HOST:${data.newrelic_entity.infra_monitor.name}] [Title:{{issueTitle}}] [Acknowledged : {{acknowledgedBy}}] [Closed :{{closedBy}}]"
+    value = "{{priority}} -[Issue Status: {{state}}] [HOST:${data.newrelic_entity.infra_monitor.name}] [Title:{{issueTitle}}] "
   }
 }
