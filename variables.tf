@@ -35,6 +35,6 @@ default =  # Place your emails separated by commas.
 }
 
 variable "notify_triggers" {
-default =  ["ACTIVATED","ACKNOWLEDGED","PRIORITY_CHANGED","CLOSED"]
+default =  ["ACTIVATED","PRIORITY_CHANGED","CLOSED"]
 
 }
