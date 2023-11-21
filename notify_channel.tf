@@ -5,7 +5,7 @@ resource "newrelic_notification_channel" "team_email_channel" {
   product = "IINT"
 property {
     key = "subject"
-    value = "[{{state}}] - {{priority}} - {{accumulations.tag.hostname}} - {{accumulations.tag.hostStatus}} - [{{issueTitle}}]" 
+    value = "[{{state}}] - {{priority}} - {{accumulations.tag.hostname}} - [{{issueTitle}}]" 
   }
   property {
     key = "customDetailsEmail"
