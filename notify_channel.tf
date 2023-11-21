@@ -9,7 +9,7 @@ property {
   }
   property {
     key = "customDetailsEmail"
-     value = " [IsAcknowledged: {{isAcknowledged}}] [Acknowledged By {{acknowledgedBy}}] [Issue Closed By:{{closedBy}}] [ViolationClosedCause:{{accumulations.violationClosedCause}}]
+     value = " [IsAcknowledged: {{isAcknowledged}}] [Acknowledged By {{acknowledgedBy}}] [Issue Closed By:{{closedBy}}] [ViolationClosedCause:{{accumulations.violationClosedCause}}]"
   }
 }
 
