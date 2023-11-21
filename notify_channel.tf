@@ -5,6 +5,11 @@ resource "newrelic_notification_channel" "team_email_channel" {
   product = "IINT"
 property {
     key = "subject"
-    value = "{{priority}} -[{{state}}] [${data.newrelic_entity.infra_monitor.name} - [{{issueTitle}}]  [Issue Closed By:{{ closedBy}}] [ViolationClosedCause{{accumulations.violationClosedCause}}] [LastIncidentCloseReason:{{accumulations.lastIncidentCloseReason}}]"
+    value = "[{{state}}] - {{priority}} - {{accumulations.tag.hostname}} - {{accumulations.tag.hostStatus}} - [{{issueTitle}}]" 
+  }
+  property {
+    key = "customDetailsEmail"
+    value = "[Issue Closed By:{{closedBy}}] [ViolationClosedCause:{{accumulations.violationClosedCause}}]"
   }
 }
+
